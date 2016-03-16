@@ -1,0 +1,364 @@
+@font-face {
+font-family: 'poetsen';
+src: url('poetsen.ttf');
+font-weight: normal;
+font-style: normal;
+}
+body {
+	margin:0;
+	font-family:cursive;
+	color:#585858;
+}
+h1, h2, h3, h4, h5, h6, nav, header, footer, #titre, .div-presentation, .button, input, form, .navAdmin, .descriptif, .navMobile a, .poetsen{
+	font-family:poetsen;
+}
+/******************************************************* TEXT ALIGN ****************************************************/
+.center {
+	text-align:center;
+}
+.justify {
+	text-align:justify;
+}
+.right {
+	text-align:right;
+}
+.left {
+	text-align:left;
+}
+.underline {
+	text-decoration:underline;
+}
+
+.float-left {
+	float:left;
+}
+/***************************************************** Button *************************************************/
+a {
+	color:black;
+}
+.a-footer {
+	color:white;
+	transition:0.3s ease-in-out;
+}
+.a-footer:hover {
+	color:#424242;
+	transition:0.3s ease-in-out;
+}
+.button {
+	border-radius:0.5em;
+	box-shadow: 0 4px 0 #640000;
+}
+.button:hover {
+	box-shadow: 0 4px 0 #4B0000;
+}
+.white {
+	color:white;
+}
+/***************************************************** FORM ****************************************************/
+input[type="mail"], input[type="text"], input[type="tel"], input[type="password"], textarea{
+	width:100%;
+	background-color:#1C1C1C;
+	padding:0.5em;
+	border:0;
+	border-radius:0.2em;
+	box-shadow: 0px 1px 0px 0px #424242;
+	font-size:1.3em;
+	color:white;
+}
+input[type="text"]:focus, input[type="mail"]:focus, input[type="tel"]:focus, input[type="password"]:focus {
+	background-color:#1C1C1C;
+}
+input[type="submit"]:hover {
+	border-radius:0.5em;
+	transition:0.3s ease-in-out;
+}
+textarea  {
+	resize: none;
+
+}
+textarea:focus {
+	background-color:#1C1C1C;
+}
+fieldset {
+	border:1px solid grey;
+	padding:1em;
+	margin:0.5em 0.5em 1.5em 0.5em;
+}
+/***************************************************** TITRE ***************************************************/
+h1 {
+	color:white;
+	font-size:5em;
+}
+h2 {
+	color:black;
+	font-size:3em;
+}
+h3 {
+	color:#383838;
+	font-size:2em;
+}
+h4 {
+	font-size:2em;
+	color:white;
+}
+
+.descriptif {
+	color:#383838;
+}
+/******************************************************* HR **************************************************************/
+.hr {
+	background-image:linear-gradient(to left, white, black);
+	height:1px;
+	margin:1em;
+}
+.hr-center {
+	background-image:linear-gradient(to right, white, black, white);
+	height:1px;	
+	margin:1em;
+}
+/***************************************************** IMG *************************************************************/
+.img1 {
+	border:5px solid grey;
+	border-radius:0.5em;
+}
+.img-top {
+	margin-top:2em;
+}
+/****************************************************** NAV ************************************************************/
+#titre {
+	color:#7D0000;
+	font-size:2.5em;
+	padding:1em;
+	text-decoration:none;
+}
+.nav-align {
+	display:inline-block;
+}
+nav {
+	position:fixed;
+	left:0; right:0;
+	background-color:white;
+	border-bottom:1px solid grey;
+	z-index:1000;
+}
+nav ul {
+	margin:0;	padding:3em 0em 2em 3em;
+}
+nav li {
+	display:inline-block;	padding-right:1em;
+}
+nav ul a {
+	color:#383838;
+	text-decoration:none;
+	font-size:1.3em;
+	padding:0.5em 1em;
+	transition:0.3s ease-in-out;
+}
+nav ul a:hover, #qui #qui-a, #offres #offres-a, #contributions #contributions-a{
+	background-color:#7D0000;
+	color:white;
+	border-radius:0.5em;
+	transition:0.3s ease-in-out;
+	box-shadow:0 4px 0 #640000;
+}
+#nav-mobile {
+	background-color:#7D0000;
+	text-align:right;
+	padding:0.3em;
+	position:fixed;
+}
+#nav-mobile a {
+	color:white;
+	font-size:2em;
+	padding:0.5em;	padding-right:0;
+}
+.navMobile ul {
+	margin:0;
+}
+.navMobile li {
+	padding:0;
+	margin:0;
+}
+.navMobile a, .navMobile a:visited, .navMobile a:focus {
+	background-color:white;
+	color:#383838;
+	display:block;
+	left:0;	right:0;
+	font-size:1.5em;
+	transition:0.3s ease-in-out;
+	padding:0.5em;
+}
+.navMobile a:hover {
+	background-color:#BDBDBD;
+	transition:0.3s ease-in-out;
+}
+.navMobile {
+	background-color:white;
+}
+/*********************************************************************** SECTION ***************************************************/
+section {
+	padding-top:2em;
+	padding-bottom:2em;
+}
+.section-padding {
+	padding:2em 10em 2em 10em;
+}
+.section-bottom{
+	box-shadow:0 0 15px grey;
+}
+#section-header {
+	background-color:#7D0000;
+	border-bottom:1px solid grey;
+}
+.case {
+	text-align:center;
+	color:#7D0000;
+	font-size:1.5em;
+	padding:0.5em;
+	padding-top:2em;	padding-bottom:2em;
+}
+.case span {
+	color:#7D0000;
+}
+.div-offre {
+	margin:1em;
+	border:10px solid #2E2E2E;
+	padding:1em;
+	border-radius:0.5em;
+	box-shadow:inset 2px 2px 3px #2E2E2E;
+}
+.div-offre span {
+	color:#7D0000;
+	font-size:2em;
+}
+.div-offre ul {
+	font-size:1.3em;
+}
+@media screen and (max-width: 63.9375em) {
+	.div-offre {
+		margin-left:0;
+		margin-right:0;
+	}
+}
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+	#connection {
+		padding:0 8em 0 8em;
+	}
+}
+
+@media screen and (min-width: 64em) {
+	#bodyConnection {
+		background-color:#7D0000;
+	}
+	#connection {
+		background-color:#7D0000;
+	}
+	#connection .con {
+	background-color:white;
+	border:1px solid grey;
+}
+}
+/********************************************************************** FOOTER **************************************************************/
+footer {
+	background-color:#2E2E2E;
+	border-top:1px solid grey;
+	padding:5em 1em 4em 1em;
+	color:white;
+}
+footer a {
+	color:white;
+	transition:0.3s ease-in-out;
+}
+footer a:hover {
+	color:#A4A4A4;
+	transition:0.3s ease-in-out;
+}
+.down {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+@media screen and (max-width: 63.9375em) {
+	footer {
+		padding-right:0;
+		padding-left:0;
+	}
+}
+@media screen and (max-width: 39.9375em) {
+	footer {
+		padding-top:3em;
+		padding-bottom:3em;
+	}
+}
+/*********************************************************************** NAV ADMIN ************************************************************/
+.navAdmin {
+	background-color:#2E2E2E;
+	width:15%;
+	border-right:4px solid #7D0000;
+	box-shadow:5px 0 10px grey;
+	position:fixed;
+}
+.navAdmin ul {
+	margin:0;
+}
+.navAdmin li {
+	margin:0;
+	padding:0;
+}
+.navAdmin a {
+	color:#A4A4A4;
+	padding:0.5em;
+	display:block;
+	right:0;	left:0;
+	transition:0.3s ease-in-out;
+}
+.navAdmin li:first-child a:first-child {
+	font-size:2em;
+}
+.navAdmin a:hover, .navAdmin a:focus {
+	background-color:#1C1C1C;
+	color:white;
+	transition:0.3s ease-in-out;
+}
+.hrNav {
+	border-bottom:1px solid #585858;
+	margin:0.5em;
+}
+.contAdmin {
+	padding:1em;
+}
+@media screen and (min-width: 64em) {
+	.contAdmin{
+		width:85%;
+		float:right;
+	}
+}
+.navAdminMobile {
+	background-color:#2E2E2E;
+}
+.navAdminMobile a span {
+	color:white;
+	font-size:1.5em;
+	padding:0.5em;
+	padding-right:0;
+}
+.navAdminMobile .icon {
+	font-size:2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
